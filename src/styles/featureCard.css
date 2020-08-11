@@ -1,0 +1,55 @@
+.featureCard {
+    width: 30%;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 20px;
+    margin: 10px;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.featureContent {
+    font-size: 1.5em;
+    padding: 25px 25px 5px 25px;
+}
+
+.descriptionContent {
+    padding-left: 25px;
+    color: hsl(229, 6%, 66%);
+    max-width: 80%;
+}
+
+.imageContent {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.featureCard:nth-child(1) {
+    transform: translateY(50%);
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.featureCard:nth-child(3) {
+    transform: translateY(50%);
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.featureCard:nth-child(4) {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+@media(max-width: 768px) {
+    .featureCard:nth-child(1) {
+        transform: translateY(0%);
+    }
+    
+    .featureCard:nth-child(3) {
+        transform: translateY(0%);
+    }
+
+    .featureCard {
+        width: 75%;
+    }
+}

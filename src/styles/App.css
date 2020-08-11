@@ -1,0 +1,58 @@
+.app {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.headerText {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.spanText {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.paragraphText {
+  text-align: center;
+  max-width: calc(1440px/2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: hsl(229, 6%, 66%);
+}
+
+.featureContainer {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 768px) {
+
+  .headerText {
+    font-size: 2em;
+  }
+
+  .spanText {
+    font-size: 0.7em
+  }
+
+  .paragraphText {
+    font-size: 0.8em;
+  }
+
+  .featureContainer {
+    text-align: center;
+  }
+}
